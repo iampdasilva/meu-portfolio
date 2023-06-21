@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ0LS6Z2JW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SZ0LS6Z2JW');
+    </script>
+
     <!--Style.CSS-->
     <link rel="stylesheet" href="style.css">
 
@@ -19,26 +28,30 @@
 </head>
 <body>
     <header class="container">
-        <h1>Portfolio<span>.</span></h1>
-        <Nav>
+        <h1><a href="index.html" class="portfolio-links">Portfolio<span>.</span></a></h1>
+        <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre mim</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="index.html" class="navbar-links">Início</a></li>
+                <li><a href="sobre.html"class="navbar-links">Sobre</a></li>
+                <li><a href="projetos.html"class="navbar-links">Projetos</a></li>
             </ul>
+        </nav>
+        <nav>
             <ul>
-                <li><i class="fa-brands fa-square-instagram fa-2xl" style="color: #da1a46;"></i></li>
-                <li><i class="fa-brands fa-square-github fa-2xl" style="color: #000000;"></i></li>
-                <li><i class="fa-brands fa-linkedin fa-2xl" style="color: #0077b7;"></i></li>
+                <li><a href="https://www.instagram.com/iampdasilva/?next=%2F" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl social-links" style="color: #da1a46;"></i></a></li>
+
+                <li><a href="https://github.com/iampdasilva"target="_blank"><i class="fa-brands fa-square-github fa-2xl social-links" style="color: #000000;"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/iampdasilva/"target="_blank"><i class="fa-brands fa-linkedin fa-2xl social-links" style="color: #0077b7;"></i></a></li>
             </ul>
-        </Nav>
+        </nav>
     </header>
 
     <Section class="content">
         <Article>
-            <h2>Olá, eu sou Paulo da Silva</h2>
+            <h2>Olá, eu sou <span>Paulo da Silva</span></h2>
             <p>Desenvolvedor Front-End</p>
-            <a href="Doc/Currículo-Paulo da Silva.pdf" target="_blank">Download CV</a>
+            <button><a href="Doc/Currículo-Paulo da Silva.pdf" target="_blank" class="curriculo-links">Download CV</a></button>
         </Article>
         <Aside>
             <img src="Imagens/paulo.png" alt="Foto: Paulo da Silva">

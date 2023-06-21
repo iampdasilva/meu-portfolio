@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ0LS6Z2JW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SZ0LS6Z2JW');
+    </script>
+
     <!--Style.CSS-->
     <link rel="stylesheet" href="style.css">
 
@@ -19,35 +28,41 @@
 </head>
 <body>
     <header class="container">
-        <h1>Portfolio<span>.</span></h1>
-        <Nav>
+        <h1><a href="index.html" class="portfolio-links">Portfolio<span>.</span></a></h1>
+        <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre mim</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="index.html" class="navbar-links">Início</a></li>
+                <li><a href="sobre.html"class="navbar-links">Sobre</a></li>
+                <li><a href="projetos.html"class="navbar-links">Projetos</a></li>
             </ul>
+        </nav>
+        <nav>
             <ul>
-                <li><i class="fa-brands fa-square-instagram fa-2xl" style="color: #da1a46;"></i></li>
-                <li><i class="fa-brands fa-square-github fa-2xl" style="color: #000000;"></i></li>
-                <li><i class="fa-brands fa-linkedin fa-2xl" style="color: #0077b7;"></i></li>
+                <li><a href="https://www.instagram.com/iampdasilva/?next=%2F" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl social-links" style="color: #da1a46;"></i></a></li>
+
+                <li><a href="https://github.com/iampdasilva"target="_blank"><i class="fa-brands fa-square-github fa-2xl social-links" style="color: #000000;"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/iampdasilva/"target="_blank"><i class="fa-brands fa-linkedin fa-2xl social-links" style="color: #0077b7;"></i></a></li>
             </ul>
-        </Nav>
+        </nav>
     </header>
 
-    <Section class="content">
+    <Section class="content-2">
         <Article>
-            <h2>Sobre mim</h2>
-            <p>Desenvolvedor Front-End</p>
+            <h2>Sobre</h2>
+            <p>Sou um estudante de análise e desenvolvimento de software, pela Faculdade Maurício de Nassau. Em paralelo a isso, estou abrangendo o meu conhecimento com as linguagens de programação, iniciando os estudos com as tecnologias HTML, CSS e JavaScript. Moro no interior da Paraíba, em uma cidadezinha perto de Campina Grande conhecida como Queimadas, daqui pretendo conquistar o mundo com os meus conhecimentos na área de desenvolvimento fullstack.</p>
         </Article>
         <Aside>
-            <h2>Tecnologias</h2>
+            <h2>Tecnologias em estudo</h2>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="html">HTML</li>
+                <li class="css">CSS</li>
+                <li class="js">JavaScript</li>
+                <li class="react">React</li>
+                <li class="node">Node.js</li>
+                <li class="ux">UX</li>
             </ul>
+
         </Aside>
     </Section>
     
